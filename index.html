@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: rgb(100, 255, 38);
+        }
+        
+        @media (max-width: 500px) {
+            #nav {
+                background: url('https://source.unsplash.com/1600x1500/?nature,water');
+                height: 500px;
+            }
+            .nav {
+                /* background-color: brown; */
+                margin: 0;
+                display: flex;
+                /* height: 30px; */
+            }
+            li {
+                margin: 9px;
+                list-style: none;
+                /* background-color: blue; */
+                /* width: px; */
+                height: 30px;
+                color: blue;
+                font-size: 32px;
+            }
+            a {
+                text-decoration: none;
+            }
+            .head {
+                text-align: center;
+                margin: 80px 30px 0 50px;
+            }
+            h1 {
+                font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            h2 {
+                text-align: center;
+            }
+            .food {
+                border: 3px solid black;
+                padding: 40px;
+                padding-top: 5px;
+                padding-bottom: 4px;
+                margin: 20px 35px 5px 35px;
+                background-color: gainsboro;
+            }
+            img {
+                border-radius: 50%;
+                margin-left: 10px;
+            }
+            .footer {
+                height: 50px;
+                background-color: rgb(26, 21, 21);
+                color: white;
+                margin: 20px 35px 5px 35px;
+            }
+            #a {
+                margin: 15px 0 0 60px;
+            }
+            .a {
+                margin-left: 40px;
+            }
+            button {
+                border-radius: 25px;
+                background-color: deepskyblue;
+            }
+            button:hover {
+                background-color: deeppink;
+            }
+            #text {
+                margin: 100px 0 0 105px;
+                background-color: rgb(105, 202, 202);
+                color: firebrick;
+                width: 160px;
+                height: 25px;
+            }
+            #time {
+                /* height: 300px; */
+                background-color: gold;
+                /* margin: 40px; */
+                text-align: center;
+                /* border: 4px solid black; */
+            }
+            .animation {
+                transition: all 1s ease-in-out;
+                font-size: 20px;
+                font-weight: bold;
+                font-style: italic;
+                display: block;
+                width: 280px;
+                margin: ;
+                text-align: center;
+            }
+            .animation:hover {
+                transform: rotate(360deg);
+                border: 2px solid black;
+                background-color: aqua;
+            }
+        }
+        
+        @media(min-width: 500px) and (max-width: 1640px) {
+            #nav {
+                background: url('https://source.unsplash.com/1600x1500/?nature,water');
+                height: 500px;
+            }
+            .nav {
+                /* background-color: brown; */
+                /* margin: 0; */
+                background-color: rgb(110, 84, 179);
+                border: 3px solid black;
+                border-radius: 32px;
+                margin-bottom: 90px;
+                display: flex;
+                /* height: 30px; */
+            }
+            li {
+                /* margin: 9px; */
+                list-style: none;
+                /* background-color: blue; */
+                /* width: px; */
+                /* height: 30px; */
+                color: blue;
+                font-size: 32px;
+                margin: 0 0 10px 23px;
+            }
+            a {
+                text-decoration: none;
+            }
+            .head {
+                text-align: center;
+                margin: 80px 30px 0 50px;
+            }
+            h1 {
+                font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            h2 {
+                text-align: center;
+            }
+            .food {
+                /* display: flex; */
+                border: 3px solid black;
+                padding: 40px;
+                padding-top: 5px;
+                padding-bottom: 4px;
+                margin: 20px 35px 5px 35px;
+                background-color: gainsboro;
+            }
+            img {
+                border-radius: 50%;
+                margin-left: 10px;
+            }
+            .footer {
+                height: 50px;
+                background-color: rgb(26, 21, 21);
+                color: white;
+                margin: 20px 35px 5px 35px;
+            }
+            #a {
+                margin: 15px 0 0 60px;
+            }
+            .a {
+                margin-left: 40px;
+            }
+            button {
+                border-radius: 25px;
+                width: 60px;
+                height: 20px;
+                background-color: deepskyblue;
+                border: 1px solid black;
+            }
+            button:hover {
+                background-color: deeppink;
+            }
+            .az {
+                margin: 100px 0 0 705px;
+                background-color: rgb(105, 202, 202);
+                color: firebrick;
+                width: 160px;
+                height: 25px;
+            }
+            #time {
+                /* height: 300px; */
+                background-color: gold;
+            }
+            #food {
+                display: flex;
+            }
+            .animation {
+                transition: all 1s ease-in-out;
+                font-size: 22px;
+                font-weight: bold;
+                font-style: italic;
+                display: block;
+                width: 400px;
+                margin: auto;
+                /* transform: rotate(360deg); */
+                /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+                /* animation-name: dip;
+                animation-duration: 10s;
+                animation-iteration-count: 20;
+                background-color: royalblue;
+                border: 4px solid black;
+                animation-timing-function: ease-in-out;
+                ani */
+            }
+            /* @keyframes dip {
+                0% {
+                    top: 0;
+                    left: 0;
+                }
+                50% {
+                    top: 100px;
+                    left: 20px;
+                }
+                100% {
+                    top: 0;
+                    left: 40px;
+                }
+            } */
+            .animation:hover {
+                transform: rotate(360deg);
+                border: 2px solid black;
+                background-color: aqua;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="container">
+
+        <header>
+            <nav>
+                <div id="nav">
+                    <div>
+                        <ul class="nav">
+                            <li><button><a href="#" alt="#">Home</button></a>
+                            </li>
+                            <li><button><a href="about.html" alt="#">About</button></a>
+                            </li>
+                            <li><button><a href="contact.html" alt="#">Contact</button></a>
+                            </li>
+                            <li><button><a href="blog.html" alt="#">Blog</button></a>
+                            </li>
+                        </ul>
+                        <!-- <marquee>THIS IS NITIN AND DIPENDRA SINGH WEBSITE</marqueen>
+                            <hr>
+                            <hr> -->
+                        <div class="search">
+                            <input type="text" name="search" class="az" id="text" placeholder="SEARCH">
+                        </div>
+                    </div>
+                    <div class="head">
+                        <!-- <marquee> -->
+                        <div class="animation">
+                            THIS IS NIT AND DIP WEBSITE
+                        </div>
+                        <!-- </marquee> -->
+                        <marquee>
+                            <h1>WELCOME TO OUR WEBSITE</h1>
+                        </marquee>
+                        <span id="time"></span>
+                    </div>
+                </div>
+                <div class="content" id="food">
+                    <div class="food">
+                        <h2>FOOD</h2>
+                        <img src="images/food.jpg" alt="error">
+                        <p>We all know very well foods are very important and we consume them in our daily life, foods affect our body and our mental and social health because each food or liquid contain particular nutrition which is very important for our
+                            physical and mental development. </p>
+                    </div>
+                    <div class="food">
+                        <h2>GYM</h2>
+                        <img src="images/gym.jpeg" alt="error">
+                        <p>It boosts the brainpower and sharpens our memory, one can improve self confidence. Your mind gets filled with positive thoughts and a positive process of reflection. Exercising every day strengthens your heart and allows it to
+                            pump more efficiently with less strain. Regular exercise may lower your risk of developing diabetes, metabolic syndrome and some types of cancer, such as colon cancer and breast cancer.</p>
+                    </div>
+                    <div class="food">
+                        <h2>NATURE</h2>
+                        <img src="images/nature.jpg" alt="error">
+                        <p>The world is a beautiful place, but I’m sure you have worked that out already. There is nothing like sitting back and admiring what mother nature has to offer. She does a pretty good job. And there is nothing better than capturing
+                            the moment so you can admire it over and over again. </p>
+                    </div>
+                    <div class="food">
+                        <h2>EDUCATION</h2>
+                        <img src="images/edu.jpg " alt="error ">
+                        <p>Education gives us knowledge of the world around us. It develops in us a perspective of looking at life. It is the most important element in the evolution of the nation. Without education, one will not explore new ideas. It means
+                            one will not able to develop the world because without ideas there is no creativity and without creativity, there is no development of the nation.</p>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="footer">
+        <div>
+            <button id="a" onclick="abc()">LIKE IT</button>
+            <button class="a">SHARE IT</button>
+            <div id="copy">
+                <!-- <button class="a"><img src="images/facebook.png " alt="error "></button>
+                    <button class="a"><img src="images/twitter.png " alt="error "></button>
+                    <button class="a"><img src="images/insta.jpg " alt="error "></button> -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        alert("this is Nitin & Dipendra website");
+        let promt = confirm("Do you want to open this then click OK");
+        console.log(promt);
+        let abc = prompt("Enter Your Name", "");
+        console.log(abc);
+    </script>
+    <script>
+        // function abc() {
+        //     let container = document.getElementById("container");
+        //     let a = document.getElementById("a");
+        //     if (container.style.display != 'none') {
+        //         container.style.display = 'none';
+        //     } else {
+        //         container.style.display = 'block';
+        //     }
+        // }
+        // let newDate = new Date();
+        // console.log(newDate);
+
+        setInterval(update, 1000);
+        // console.log(abc)
+
+        // let time = document.getElesmentById("time")
+
+        function update() {
+            time.innerHTML = new Date();
+        }
+    </script>
+</body>
+
+</html>

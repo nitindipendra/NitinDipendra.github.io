@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        BODY {
+            background-color: deepskyblue;
+            /* width: 375px; */
+        }
+        
+        @media (max-width: 500px) {
+            #name {
+                width: 290px;
+                margin: 10px 10px 10px 10px;
+            }
+            #mail {
+                width: 290px;
+                margin: 10px 10px 10px 10px;
+            }
+            #number {
+                width: 290px;
+                margin: 10px 10px 10px 10px;
+            }
+            #message {
+                width: 290px;
+                margin: 10px 10px 10px 10px;
+            }
+            .form {
+                /* background-color: cyan; */
+            }
+            .formm {
+                display: flex;
+                justify-content: center;
+            }
+            h1 {
+                text-align: center;
+                color: turquoise;
+                border: 3px dashed black;
+                display: block;
+                width: 200px;
+                margin: 45px 75px;
+                background-color: chartreuse;
+                /* text-decoration: initial; */
+            }
+            fieldset {
+                background-color: cyan;
+                width: 340px;
+                margin: 5px;
+            }
+            h2 {
+                color: darkblue;
+            }
+            .nav {
+                /* background-color: brown; */
+                margin-bottom: 90px;
+                display: flex;
+                /* height: 30px; */
+            }
+            li {
+                margin: 12px;
+                list-style: none;
+                /* background-color: blue; */
+                /* width: px; */
+                height: 30px;
+                color: blue;
+                font-size: 32px;
+            }
+            a {
+                text-decoration: none;
+            }
+            button {
+                border-radius: 25px;
+                background-color: deepskyblue;
+            }
+            button:hover {
+                background-color: deeppink;
+            }
+            #text {
+                margin: 100px 0 0 240px;
+                background-color: rgb(105, 202, 202);
+                color: firebrick;
+                /* width: 160px; */
+                height: 25px;
+            }
+            /* .box {
+            width: 350px;
+        } */
+            #submit {
+                border: 1px solid black;
+                /* border-radius: 12px; */
+                padding: 3px;
+                margin: 0 0 22px 0;
+            }
+            #reset {
+                border: 1px solid black;
+                /* border-radius: 12px; */
+                padding: 3px;
+                margin: 0 0 22px 0;
+            }
+            .zz {
+                display: flex;
+            }
+            .aaz {
+                margin: 0 0 0 0;
+            }
+            .aay {
+                margin: 0 0 0 150px;
+            }
+            .btn button {
+                /* display: flex; */
+                background-color: red;
+                border-radius: 0;
+            }
+        }
+        
+        @media (min-width: 500px) and (max-width: 1600px) {
+            #name {
+                width: 400px;
+                margin: 10px 10px 10px 10px;
+            }
+            #mail {
+                width: 400px;
+                margin: 10px 10px 10px 10px;
+            }
+            #number {
+                width: 400px;
+                margin: 10px 10px 10px 10px;
+            }
+            #message {
+                width: 400px;
+                margin: 10px 10px 10px 10px;
+            }
+            .form {
+                /* background-color: cyan; */
+            }
+            .formm {
+                display: flex;
+                justify-content: center;
+            }
+            h1 {
+                text-align: center;
+                color: turquoise;
+                border: 3px dashed black;
+                display: block;
+                width: 400px;
+                margin: 45px auto;
+                background-color: chartreuse;
+                /* text-decoration: initial; */
+            }
+            fieldset {
+                background-color: cyan;
+                /* width: 290px; */
+            }
+            h2 {
+                color: darkblue;
+            }
+            .nav {
+                /* background-color: brown; */
+                margin-bottom: 90px;
+                display: flex;
+                background-color: rgb(110, 84, 179);
+                border: 3px solid black;
+                border-radius: 32px;
+                /* height: 30px; */
+            }
+            li {
+                /* margin: 12px; */
+                list-style: none;
+                /* background-color: blue; */
+                /* width: px; */
+                /* height: 30px; */
+                color: blue;
+                font-size: 32px;
+                margin: 0 0 10px 23px;
+            }
+            a {
+                text-decoration: none;
+            }
+            button {
+                border-radius: 25px;
+                width: 60px;
+                height: 20px;
+                background-color: deepskyblue;
+                border: 1px solid black;
+            }
+            button:hover {
+                background-color: deeppink;
+            }
+            #text {
+                margin: 100px 0 0 240px;
+                background-color: rgb(105, 202, 202);
+                color: firebrick;
+                /* width: 160px; */
+                height: 25px;
+            }
+            /* .box {
+            width: 350px;
+        } */
+            #submit {
+                border: 1px solid black;
+                /* border-radius: 12px; */
+                margin-bottom: 20px;
+            }
+            #reset {
+                border: 1px solid black;
+                /* border-radius: 12px; */
+                margin-bottom: 20px;
+            }
+            .zz {
+                display: flex;
+            }
+            .btn button {
+                /* display: flex; */
+                background-color: red;
+                border-radius: 0;
+            }
+            .aaz {
+                margin: 0 0 0 0;
+            }
+            .aay {
+                margin: 0 0 0 190px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <ul class="nav">
+                <li><button><a href="index.html" alt="#">Home</button></a>
+                </li>
+                <li><button><a href="about.html" alt="#">About</button></a>
+                </li>
+                <li><button><a href="#" alt="#">Contact</button></a>
+                </li>
+                <li><button><a href="blog.html" alt="#">Blog</button></a>
+                </li>
+            </ul>
+            <!-- <div class="search">
+                <input type="text" name="search" id="text" placeholder="SEARCH">
+            </div> -->
+        </div>
+        <h1>CONTACT US</h1>
+        <div class="box">
+            <div>
+                <form>
+                    <fieldset>
+                        <legend>
+                            <h2>Log in</h2>
+                        </legend>
+                        <div class="formm">
+                            <div class="form">Enter your name
+                                <div>
+                                    &#9758;&#9758;<input id="name" type="text" placeholder="ENTER YOUR NAME"></div>
+                                <div>
+                                </div>
+
+                                <div class="form">enter your e-mail
+                                    <div>&#9758;&#9758;<input id="mail" type="email" placeholder="ENTER YOUR Email"></div>
+                                </div>
+
+
+                                <div class="form">Enter your mobile number
+                                    <div>&#9758;&#9758;<input id="number" type="text" placeholder="ENTER YOUR PNONE NUMBER"></div>
+                                </div>
+
+
+                                <div class="form"> Have you any message for me then type here
+                                    <div>&#9758;&#9758;
+                                        <textarea id="message" placeholder="YOUR MESSAGE "></textarea>
+                                    </div>
+                                </div>
+                                <div class="zz">
+                                    <div>
+                                        <div class="aaz">
+                                            &#9758;&#9758;<input type="submit" value="SUBMIT" id="submit"></div>
+
+                                    </div>
+                                    <div>
+                                        <div class="aay">
+                                            &#9758;&#9758;<input type="reset" value="RESET" id="reset"></div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+</body>
+
+</html>
